@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_navigation/screens/screen1.dart';
+import 'package:flutter_navigation/screens/screen2.dart';
+import 'package:flutter_navigation/screens/screen3.dart';
+import 'package:flutter_navigation/screens/screen4.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,14 +32,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -77,7 +72,7 @@ class _MyHomePageState extends State<MyHomePage> {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const Screen1()),
+                  MaterialPageRoute(builder: (context) => const Screen2()),
                 );
               },
               child: Container(
@@ -103,7 +98,7 @@ class _MyHomePageState extends State<MyHomePage> {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const Screen1()),
+                  MaterialPageRoute(builder: (context) => const Screen3()),
                 );
               },
               child: Container(
@@ -129,7 +124,7 @@ class _MyHomePageState extends State<MyHomePage> {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const Screen1()),
+                  MaterialPageRoute(builder: (context) => const Screen4()),
                 );
               },
               child: Container(
